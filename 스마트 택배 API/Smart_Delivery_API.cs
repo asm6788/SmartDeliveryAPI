@@ -31,7 +31,7 @@ namespace Smart_Delivery_API
             Collected,
             ArrivalAtBranch = 4,
             StartDelivery,
-            CompleteDelivey
+            CompleteDelivery
         }
         public string adUrl;
         public bool complete;
