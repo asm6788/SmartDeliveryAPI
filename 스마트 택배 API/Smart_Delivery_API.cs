@@ -35,7 +35,7 @@ namespace Smart_Delivery_API
         }
         public string adUrl;
         public bool complete;
-        public DateTime estimate;
+        public string estimate;
         public long invoice_no;
         public string itemImage;
         public string itemName;
@@ -236,10 +236,6 @@ namespace Smart_Delivery_API
                     else if (_f.Name == "trans_time")
                     {
                         _f.SetValue(trackinginfo, DateTime.Parse(xn_info["trans_time"].InnerText));
-                    }
-                    else if (_f.Name == "estimate")
-                    {
-                        _f.SetValue(trackinginfo, DateTime.Parse(xn_info["estimate"].InnerText));
                     }
                     else
                     {
